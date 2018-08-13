@@ -1,0 +1,60 @@
+.container {
+  outline: none;
+  max-width: 30%;
+  margin: auto;
+}
+
+.container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.modal {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 1px solid #888;
+  opacity: 1;
+  margin-top: 50px;
+  animation-name: animatetop;
+  animation-duration: 0.6s;
+}
+
+@keyframes animatetop {
+  from {margin-top: -100px; opacity: 0}
+  to {margin-top:50px; opacity: 1}
+}
+
+.modalHeader {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.modelFooter {
+  padding: 4px 16px ;
+  text-align: center;
+  margin-top: 5px;
+  background: rgba(0,0,0,0.2);
+}
+
+.close {
+  color: white;
+  float: right;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
